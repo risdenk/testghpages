@@ -15,5 +15,5 @@ cd gh-pages
 git config user.email "travisci@travisci.org"
 git config user.name "Travis CI"
 git add -A .
-git commit -m "Updates gh-pages on $(date)" || exit 0
+git commit -m "Updates gh-pages based on $TRAVIS_BRANCH commit $TRAVIS_COMMIT" || exit 0
 git push --quiet origin gh-pages
