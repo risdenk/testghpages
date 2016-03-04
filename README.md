@@ -20,6 +20,12 @@ This takes the contents of the docs folder upon a successful build/test and push
 #### update_wiki.sh
 This takes the contents of the docs/wiki folder upon a successful build/test and pushes them to the wiki repo. This is then displayed by Github properly.
 
+## Viewing gh-pages locally
+1. `cd docs`
+2. `gem install bundle`
+3. `bundle exec jekyll serve`
+4. Open `http://localhost:4000`
+
 ## Links
 * https://github.com/risdenk/testghpages
 * https://travis-ci.org/risdenk/testghpages
