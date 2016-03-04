@@ -10,7 +10,7 @@ script: ./run_test.sh
 deploy:
   skip_cleanup: true
   provider: script
-  script: ./deploy_pages.sh
+  script: ./deploy.sh
   on:
     branch: master
 
@@ -18,4 +18,5 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     - GH_REF: github.com/risdenk/testghpages.git
+    - GH_WIKI_REF: github.com/risdenk/testghpages.wiki.git
     - secure: "SxTRVjkWJ8WYpTz14OHncnq6wtvQ4L/JGYw0VG7vIBIM6EIuyVV22uB9Imu6eJh01YG7OYMCJESA4Ogt5KKxc4UqK0sq4eIzry1wFqrNGUUIhov/I5iO8JcEVSjyL5q2qMIfuKMzAtWzNoWdijKqMgYcVqB1lsAPQwuQQf5b0cD5QW0Q251d9sXakd4523D8RjMvVs+ULr0CSlEW0vOiHGlPns4wumQYqru7Znon9nIj4p7oZ8XUghVirtYKX0ROtPy9qUFSOQRdhsdmE4XtuGKDwu5QV9P7l3SFGIdmpgOfwty8BYHoY8mn+CQ4KT9HQVISLl1f85I5oOOHWAgSX7xZhC4aYVFKnq1yiSq87cRNbzq3VM4WSVNnTN866iZJv5koobcqIRQc1n4OS/hSy+oYzNuDhnYhBXPGIKss5Ls5nFl05GyfgqrTeEZuKxI0LBQvO9ruJbj6Ry2Fqds80Ma660ijsEwLmpvz7xYD4pLEvHdL6wItZyTphfr2HabqzSL3zJ7rydcZLUHl1e3rvuxaGZOYPc3vWTrhFtAri/umGylR0Rlx/jUoaN5hc3tXrgl0cMam4Hyh7g4mw076esTsqocbmskm8pSpK9qg0aopi14enlrsWI3jjq3tGsDqpl3qmjyEovj74w6wx5wzPxn6166gYkCwPH/YV1MU1s0="
