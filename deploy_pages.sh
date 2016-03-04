@@ -13,9 +13,6 @@ shopt -s dotglob
 cp -r docs/* gh-pages/
 
 cd gh-pages
-
-echo "Updated gh-pages based on $TRAVIS_BRANCH commit $TRAVIS_COMMIT on $(date)" > gh-pages-version.html
-
 git config user.email "travisci@travisci.org"
 git config user.name "Travis CI"
 git add -A .
